@@ -3,11 +3,11 @@ from __future__ import with_statement
 
 import sys
 
-from setuptools import setup, find_packages
+from setuptools import setup, find_namespace_packages
 
 
 # Do not change the variable name.  It's parsed by doc/conf.py script.
-version = '0.1.6'
+version = '0.1.6b1'
 
 requires = ['Sphinx >= 1.2', 'six']
 
@@ -21,12 +21,12 @@ def readme():
 
 
 setup(
-    name='sphinxcontrib-autoprogram',
+    name='Paebbels.sphinxcontrib.autoprogram',
     version=version,
-    url='https://github.com/sphinx-contrib/autoprogram',
+    url='https://github.com/Paebbels/Paebbels.sphinxcontrib.autoprogram',
     license='2-Clause BSD',
-    author='Hong Minhee',
-    author_email='\x68\x6f\x6e\x67.minhee' '@' '\x67\x6d\x61\x69\x6c.com',
+    author='Hong Minhee, Patrick Lehmann',
+    author_email='\x68\x6f\x6e\x67.minhee' '@' '\x67\x6d\x61\x69\x6c.com, Paebbels@gmail.com',
     description='Documenting CLI programs',
     long_description=readme(),
     zip_safe=False,
@@ -44,6 +44,8 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy',
         'Programming Language :: Python :: Implementation :: Stackless',
@@ -52,10 +54,9 @@ setup(
         'Topic :: Utilities'
     ],
     platforms='any',
-    packages=find_packages(),
-    namespace_packages=['sphinxcontrib'],
+    packages=find_namespace_packages(),
     include_package_data=True,
     install_requires=requires,
     extras_requires={":python_version=='2.6'": ['argparse']},
-    test_suite='sphinxcontrib.autoprogram.suite'
+    test_suite='Paebbels.sphinxcontrib.autoprogram.suite'
 )
