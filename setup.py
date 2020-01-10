@@ -7,7 +7,7 @@ from setuptools import setup, find_namespace_packages
 
 
 # Do not change the variable name.  It's parsed by doc/conf.py script.
-version = '0.1.6a1'
+version = '0.1.6a1.post1'
 
 requires = ['Sphinx >= 1.2', 'six']
 
