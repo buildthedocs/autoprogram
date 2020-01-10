@@ -61,7 +61,7 @@ This is a patched version of `sphinxcontrib.autoprogram <https://github.com/sphi
 
 .. rubric:: Added features
 
-* TDB
+* new option ``label`` to add a label/anchor that can be referenced with ``:ref:``
 
 --------------------
 
