@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-    sphinxcontrib
-    ~~~~~~~~~~~~~
+    btd.sphinx
+    ~~~~~~~~~~
 
     This package is a namespace package that contains all extensions
     distributed in the ``sphinx-contrib`` distribution.

@@ -1,6 +1,6 @@
 """
-    sphinxcontrib.autoprogram
-    ~~~~~~~~~~~~~~~~~~~~~~~~~
+    btd.sphinx.autoprogram
+    ~~~~~~~~~~~~~~~~~~~~~~
 
     Documenting CLI programs.
 
@@ -493,10 +493,10 @@ class AutoprogramDirectiveTestCase(unittest.TestCase):
 class UtilTestCase(unittest.TestCase):
 
     def test_import_object(self):
-        cls = import_object('sphinxcontrib.autoprogram:UtilTestCase')
+        cls = import_object('btd.sphinx.autoprogram:UtilTestCase')
         self.assertTrue(cls is UtilTestCase)
         instance = import_object(
-            'sphinxcontrib.autoprogram:UtilTestCase("test_import_object")'
+            'btd.sphinx.autoprogram:UtilTestCase("test_import_object")'
         )
         self.assertIsInstance(instance, UtilTestCase)
 
