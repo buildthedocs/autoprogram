@@ -4,8 +4,8 @@ on:
   push:
     tags:
       - '*'
-    branches:
-      - 'btd/*'
+    branches-ignore:
+      - '!btd/*'
 
 jobs:
   deploy:
