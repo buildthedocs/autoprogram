@@ -57,11 +57,19 @@
 
 This is a patched version of `sphinxcontrib.autoprogram <https://github.com/sphinx-contrib/autoprogram>`_ written by Hong Minhee.
 
+    **Note:**
+    Patched versions of internal packages from Sphinx are released as M.M.P.postN
+    versions. So `2.3.1.post1` is the patched module version derived from Sphinx
+    `2.3.1`.
+
 --------------------
 
-.. rubric:: Added features
+.. rubric:: Added features and changes
 
-* new option ``label`` to add a label/anchor that can be referenced with ``:ref:``
+* ``0.1.6.post1``
+
+  * New option ``label`` to add a label/anchor that can be referenced with ``:ref:``
+
 
 --------------------
 
