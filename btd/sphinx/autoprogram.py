@@ -113,7 +113,6 @@ def format_option(arg):
     return names, desc
 
 
-
 def import_object(import_name):
     module_name, expr = import_name.split(':', 1)
     try:
