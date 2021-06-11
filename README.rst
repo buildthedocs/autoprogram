@@ -55,6 +55,11 @@
 ``btd.sphinx.autoprogram``
 ==========================
 
+This contrib extension, ``sphinxcontrib.autoprogram``, provides an automated
+way to document CLI programs.  It scans ``argparse.ArgumentParser`` object,
+and then expands it into a set of ``.. program::`` and ``.. option::``
+directives.
+
 This is a patched version of `sphinxcontrib.autoprogram <https://github.com/sphinx-contrib/autoprogram>`_ written by Hong Minhee.
 
     **Note:**
@@ -66,6 +71,10 @@ This is a patched version of `sphinxcontrib.autoprogram <https://github.com/sphi
 
 .. rubric:: Added features and changes
 
+* ``0.1.7.post1``
+
+  * Updated patched version to match upstream version 0.1.7.
+  
 * ``0.1.6.post1``
 
   * New option ``label`` to add a label/anchor that can be referenced with ``:ref:``
@@ -78,3 +87,7 @@ Install using ``pip``:
 .. code-block:: console
 
    $ pip install btd.sphinx.autoprogram
+
+You can find the original documentation from the following URL:
+
+https://sphinxcontrib-autoprogram.readthedocs.io/
